@@ -9,20 +9,10 @@
 
 React Application for ROS 2 Robot
 
-**Keywords:** ROS 2, React, rosbridge
-
-### License
-
-The source code is released under a [MIT license](LICENSE).
-
-## Requirements & Dependencies
+## ros brdige
 
 ```
-sudo apt install nodejs
 sudo apt install -y ros-$ROS_DISTRO-rosbridge-suite
-sudo npm i -g create-react-app
-npm install roslib
-npm install --save chart.js react-chartjs-2
 ```
 
 ## Installation
@@ -44,7 +34,7 @@ npm start
 
 Second shell, launch the rosbridge_server
 ```
-. install/setup.bash
+source /opt/ros/{distro}/install/setup.bash
 ros2 launch rosbridge_server rosbridge_websocket_launch.xml
 ```
 
@@ -52,7 +42,6 @@ access the browser below.
 
 ```
   Local:            http://localhost:3000
-  On Your Network:  http://192.168.11.3:3000
 ```
 
 ![React_ros2_app](./img/react_ros2_app.png)
