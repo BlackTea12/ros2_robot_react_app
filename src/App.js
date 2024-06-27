@@ -29,6 +29,7 @@ import CmdData from './components/CmdData';
 import ImuData from './components/ImuData';
 import MapandOdom from './components/MapandOdom';
 import Rosconnection from './components/RosConnection';
+import ThreeScene from './pages/ThreeScene';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -42,7 +43,7 @@ function App() {
     <>
       <Header />
       {/* <Rosconnection rosUrl="ws://localhost:9090" rosDomainId="89"> */}
-      <Rosconnection rosUrl="ws://192.168.11.3:9090" rosDomainId="89" setRos={setRos} />
+      <Rosconnection rosUrl="ws://localhost:9090" rosDomainId="89" setRos={setRos} />
       {ros &&
         <>
         <Row>
@@ -72,7 +73,11 @@ function App() {
         </Row>
         </>
       }
-
+      <Row>
+        <div style={{ height: '100vh' }}>
+          <ThreeScene />
+        </div>
+      </Row>
       <hr/>
       <h3>Connection: <span id="status">N/A</span></h3>
 
