@@ -14,7 +14,7 @@ const TableScene = () => {
   return (
     <div className="sidebar-container">
       <div className='tab'>
-        <Nav variant="tabs" defaultActiveKey="/home">
+        <Nav variant="pills" defaultActiveKey="/home">
           <Nav.Item>
             <Nav.Link href="/home">Active</Nav.Link>
           </Nav.Item>
