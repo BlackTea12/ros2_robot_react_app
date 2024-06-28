@@ -35,6 +35,7 @@ import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Col } from 'react-bootstrap';
 import TableScene from './pages/TableScene';
+import OptionTransitions from './pages/OptionTransitions'
 
 function App() {
   const [ros, setRos] = useState(null);
@@ -72,13 +73,14 @@ function App() {
         </Row>
         </>
       }
-      <Row>
+      {/* <Row>
         <div style={{ height: '100vh' }}>
           <ThreeScene />
         </div>
-      </Row>
+      </Row> */}
       <div className='App'>
-        <TableScene />
+        {/* <TableScene /> */}
+        <OptionTransitions />
       </div>
       <hr/>
       <h3>Connection: <span id="status">N/A</span></h3>
