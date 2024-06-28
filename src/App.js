@@ -34,8 +34,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Row, Col } from 'react-bootstrap';
-
-
+import TableScene from './pages/TableScene';
 
 function App() {
   const [ros, setRos] = useState(null);
@@ -78,6 +77,9 @@ function App() {
           <ThreeScene />
         </div>
       </Row>
+      <div className='App'>
+        <TableScene />
+      </div>
       <hr/>
       <h3>Connection: <span id="status">N/A</span></h3>
 
